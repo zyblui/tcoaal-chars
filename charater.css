@@ -1,0 +1,850 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(200deg, #955456, #000);*/
+} 
+nav{
+    
+    width: 100%;
+    background: #955456;
+    padding: 0 50px;
+    box-sizing: border-box;
+}
+nav .title{
+    padding: 20px 30px;
+    
+}
+nav ul{
+   position: absolute;
+   top: 8px;
+   right: 15px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px 30px;
+    transition: 0.5s;
+}
+nav ul li a{
+    font-size: 20px;
+    color: #000;
+    text-decoration: none;
+}
+nav ul li:hover{
+    background: red;
+
+}
+/*-----------------------card-container----------------------*/
+.card_container{
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    height: auto;
+    width: auto;
+    top: 80px;
+    background: linear-gradient(200deg, #955456, #000)
+}
+/* -------------------ley--------------------- */
+.cardley{
+    position: relative;
+    width: 300px;
+    height: 600px;
+    margin: 20px;
+    background-color: #EC83C3;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    flex-shrink: 0;
+}
+.cardley .photo{
+    position: absolute;
+    background-color: black;
+    top: 0;
+    height: 70%;
+    width: 100%;
+    border-radius: 0%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.cardley .photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 20%;
+}
+.cardley:hover .photo{
+    top: 30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+.cardley h1{
+    position: absolute;
+    top: 430px;
+    transition: 0.5s;
+
+}
+.cardley:hover h1{
+    top: 230px;
+}
+.cardley p{
+    margin-top: 300px;
+    width: 90%;
+    text-indent: 16px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+.cardley a{
+    margin-top: 60px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 8px 32px;
+    border-radius: 8px;
+}
+.cardley a:hover{
+    color: white;
+    background-color: #86D37A;
+}
+/* -------------------andy--------------------- */
+.cardan{
+    position: relative;
+    
+    width: 300px;
+    height: 600px;
+    margin: 20px;
+    background-color: #86D37A;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* color  */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    flex-shrink: 0;
+}
+
+.cardan .photo{
+    position: absolute;
+    background-color: black;
+    top: 0;
+    height: 70%;
+    width: 100%;
+    border-radius: 0%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.cardan .photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 0;
+}
+
+.cardan:hover .photo{
+    top: 30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+.cardan h1{
+    position: absolute;
+    top: 430px;
+    transition: 0.5s;
+
+}
+.cardan:hover h1{
+    top: 230px;
+}
+.cardan p{
+    margin-top: 300px;
+    width: 90%;
+    text-indent: 16px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+.cardan a{
+    margin-top: 60px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 8px 32px;
+    border-radius: 8px;
+}
+.cardan a:hover{
+    color: white;
+    background-color: #EC83C3;
+}
+/* -------------------renee--------------------- */
+.cardre{
+    position: relative;
+    
+    width: 300px;
+    height: 600px;
+    margin: 20px;
+    background-color: #EEEA72;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* color  */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    flex-shrink: 0;
+}
+
+.cardre .photo{
+    position: absolute;
+    background-color: black;
+    top: 0;
+    height: 70%;
+    width: 100%;
+    border-radius: 0%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.cardre .photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 0;
+}
+
+.cardre:hover .photo{
+    top: 30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+.cardre h1{
+    position: absolute;
+    top: 430px;
+    transition: 0.5s;
+
+}
+.cardre:hover h1{
+    top: 230px;
+}
+.cardre p{
+    margin-top: 300px;
+    width: 90%;
+    text-indent: 16px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+.cardre a{
+    margin-top: 60px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 8px 32px;
+    border-radius: 8px;
+}
+.cardre a:hover{
+    color: white;
+    background-color: #596891;
+}
+/* -------------------douglas--------------------- */
+.carddou{
+    position: relative;
+    
+    width: 300px;
+    height: 600px;
+    margin: 20px;
+    background-color: #596891;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* color  */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    flex-shrink: 0;
+}
+
+.carddou .photo{
+    position: absolute;
+    background-color: black;
+    top: 0;
+    height: 70%;
+    width: 100%;
+    border-radius: 0%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.carddou .photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 0;
+}
+
+.carddou:hover .photo{
+    top: 30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+.carddou h1{
+    position: absolute;
+    top: 430px;
+    transition: 0.5s;
+
+}
+.carddou:hover h1{
+    top: 230px;
+}
+.carddou p{
+    margin-top: 300px;
+    width: 90%;
+    text-indent: 16px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+.carddou a{
+    margin-top: 60px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 8px 32px;
+    border-radius: 8px;
+}
+.carddou a:hover{
+    color: white;
+    background-color: #EEEA72;
+}
+/* -------------------grandpa--------------------- */
+.cardpa{
+    position: relative;
+    
+    width: 300px;
+    height: 600px;
+    margin: 20px;
+    background-color: #5B5B5B;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* color  */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    flex-shrink: 0;
+}
+
+.cardpa .photo{
+    position: absolute;
+    background-color: black;
+    top: 0;
+    height: 70%;
+    width: 100%;
+    border-radius: 0%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.cardpa .photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 20% 0;
+}
+
+.cardpa:hover .photo{
+    top: 30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+.cardpa h1{
+    position: absolute;
+    top: 430px;
+    transition: 0.5s;
+
+}
+.cardpa:hover h1{
+    top: 230px;
+}
+.cardpa p{
+    margin-top: 300px;
+    width: 90%;
+    text-indent: 16px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+.cardpa a{
+    margin-top: 60px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 8px 32px;
+    border-radius: 8px;
+}
+.cardpa a:hover{
+    color: white;
+    background-color: #8497B3;
+}
+/* -------------------grandma--------------------- */
+.cardma{
+    position: relative;
+    
+    width: 300px;
+    height: 600px;
+    margin: 20px;
+    background-color: #8497B3;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* color  */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    flex-shrink: 0;
+}
+
+.cardma .photo{
+    position: absolute;
+    background-color: black;
+    top: 0;
+    height: 70%;
+    width: 100%;
+    border-radius: 0%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.cardma .photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 0;
+}
+
+.cardma:hover .photo{
+    top: 30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+.cardma h1{
+    position: absolute;
+    top: 430px;
+    transition: 0.5s;
+
+}
+.cardpa:hover h1{
+    top: 230px;
+}
+.cardma p{
+    margin-top: 300px;
+    width: 90%;
+    text-indent: 16px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+.cardma a{
+    margin-top: 60px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 8px 32px;
+    border-radius: 8px;
+}
+.cardma a:hover{
+    color: white;
+    background-color: #5B5B5B;
+}
+/* -------------------julia--------------------- */
+.cardju{
+    position: relative;
+    width: 300px;
+    height: 600px;
+    margin: 20px;
+    background-color: #EEEA72;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* color  */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    flex-shrink: 0;
+}
+
+.cardju .photo{
+    position: absolute;
+    background-color: black;
+    top: 0;
+    height: 70%;
+    width: 100%;
+    border-radius: 0%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.cardju .photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 0;
+}
+
+.cardju:hover .photo{
+    top: 30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+.cardju h1{
+    position: absolute;
+    top: 430px;
+    transition: 0.5s;
+
+}
+.cardju:hover h1{
+    top: 230px;
+}
+.cardju p{
+    margin-top: 300px;
+    width: 90%;
+    text-indent: 16px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+.cardju a{
+    margin-top: 60px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 8px 32px;
+    border-radius: 8px;
+}
+.cardju a:hover{
+    color: white;
+    background-color: purple;
+}
+/* -------------------nina--------------------- */
+.cardni{
+    position: relative;
+    width: 300px;
+    height: 600px;
+    margin: 20px;
+    background-color: purple;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* color  */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    flex-shrink: 0;
+}
+
+.cardni .photo{
+    position: absolute;
+    background-color: black;
+    top: 0;
+    height: 70%;
+    width: 100%;
+    border-radius: 0%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.cardni .photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 20% 0;
+}
+
+.cardni:hover .photo{
+    top: 30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+.cardni h1{
+    position: absolute;
+    top: 430px;
+    transition: 0.5s;
+
+}
+.cardni:hover h1{
+    top: 230px;
+}
+.cardni p{
+    margin-top: 300px;
+    width: 90%;
+    text-indent: 16px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+.cardni a{
+    margin-top: 60px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 8px 32px;
+    border-radius: 8px;
+}
+.cardni a:hover{
+    color: white;
+    background-color: #EEEA72;
+}
+/* -------------------lady--------------------- */
+.carddy{
+    position: relative;
+    width: 300px;
+    height: 600px;
+    margin: 20px;
+    background-color: #EEEA72;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* color  */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    flex-shrink: 0;
+}
+
+.carddy .photo{
+    position: absolute;
+    background-color: black;
+    top: 0;
+    height: 70%;
+    width: 100%;
+    border-radius: 0%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.carddy .photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 20% 0;
+}
+
+.carddy:hover .photo{
+    top: 30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+.carddy h1{
+    position: absolute;
+    top: 430px;
+    transition: 0.5s;
+
+}
+.carddy:hover h1{
+    top: 230px;
+}
+.carddy p{
+    margin-top: 300px;
+    width: 90%;
+    text-indent: 16px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+.carddy a{
+    margin-top: 60px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 8px 32px;
+    border-radius: 8px;
+}
+.carddy a:hover{
+    color: white;
+    background-color: #596891;
+}
+/* -------------------surgeon--------------------- */
+.cardsur{
+    position: relative;
+    width: 300px;
+    height: 600px;
+    margin: 20px;
+    background-color: #EEEA72;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* color  */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    flex-shrink: 0;
+}
+
+.cardsur .photo{
+    position: absolute;
+    background-color: black;
+    top: 0;
+    height: 70%;
+    width: 100%;
+    border-radius: 0%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.cardsur .photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 20% 0;
+}
+
+.cardsur:hover .photo{
+    top: 30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+.cardsur h1{
+    position: absolute;
+    top: 430px;
+    transition: 0.5s;
+
+}
+.cardsur:hover h1{
+    top: 230px;
+}
+.cardsur p{
+    margin-top: 300px;
+    width: 90%;
+    text-indent: 16px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    line-height: 30px;
+}
+.cardsur a{
+    margin-top: 60px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 8px 32px;
+    border-radius: 8px;
+}
+.cardsur a:hover{
+    color: white;
+    background-color: #596891;
+}
+/* -------------------lord unkown--------------------- */
+.cardld{
+    position: relative;
+    width: 300px;
+    height: 600px;
+    margin: 20px;
+    background-color: #000;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* color  */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    flex-shrink: 0;
+}
+
+.cardld .photo{
+    position: absolute;
+    background: linear-gradient(200deg,#000, #E32636);
+    top: 0;
+    height: 70%;
+    width: 100%;
+    border-radius: 0%;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.cardld .photo img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 0;
+}
+
+.cardld:hover .photo{
+    top: 30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+.cardld h1{
+    position: absolute;
+    top: 430px;
+    transition: 0.5s;
+    color: #E32636;
+}
+.cardld:hover h1{
+    top: 230px;
+}
+.cardld p{
+    margin-top: 300px;
+    width: 90%;
+    text-indent: 16px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    line-height: 30px;
+    color: #E32636;
+}
+.cardld a{
+    margin-top: 60px;
+    font-size: 14px;
+    color: #E32636;
+    text-decoration: none;
+    border: 1px solid #E32636;
+    padding: 8px 32px;
+    border-radius: 8px;
+}
+.cardld a:hover{
+    color: #000;
+    background-color: #E32636;
+}
