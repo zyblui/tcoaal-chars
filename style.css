@@ -1,0 +1,31 @@
+body {
+    background-color: #f3f3f3;
+    font-family: Inter, sans-serif;
+}
+
+.container {
+    border-radius: 9px;
+    box-shadow: 0 0 9px lightgray;
+    padding: 9px 27px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    height: fit-content;
+    max-width: 60ch;
+}
+
+a {
+    color: dodgerblue;
+}
+
+.note {
+    background-color: color-mix(in srgb, dodgerblue 30%, transparent);
+    border-left: solid 9px dodgerblue;
+    padding: 9px;
+    border-radius: 0 9px 9px 0;
+}
